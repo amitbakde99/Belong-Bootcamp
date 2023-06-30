@@ -7,15 +7,18 @@ student_courses = {("Alice", "CS101"), ("Bob", "CS101"), ("Charlie", "MATH101"),
 required_courses = {("CS101"), ("MATH101")}
 
 def find_students_with_all_courses(student_courses, required_courses):
-    required_course_codes = {course[1] for course in required_courses}
-
-    students_with_all_courses = set()
-    for student, course_code in student_courses:
-        # Check if the student has taken all required courses
-        if all(course in required_course_codes for course in required_course_codes):
-            students_with_all_courses.add(student)
-
-    return students_with_all_courses
+    d={}
+    l=len(required_courses)
+    for i in student_courses:
+        try:
+            d[i[0]]+=1
+        except:
+            d[i[0]]=1
+    s=[]
+    for i in d:
+        if d[i]==l:
+            s.append(i)
+    return sorted(set(s))        
 #Run the function
 answer=find_students_with_all_courses(student_courses, required_courses)
 print(answer)
