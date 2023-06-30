@@ -1,4 +1,9 @@
-#5.You are given an integer A. You have to tell whether it is a perfect number or not. Perfect number is a positive integer which is equal to the sum of its proper positive divisors. A proper divisor of a natural number is the divisor that is strictly less than the number. Return 1 if A is a perfect number and 0 otherwise.
+#1.Given an integer A, you need to find the count of it's factors.Factor of a number is the number which divides it perfectly leaving no remainder.Example : 1, 2, 3, 6 are factors of 6
+#2.Given a number A. Return 1 if A is prime and return 0 if not.
+#3.Given a number A. Return square root of the number if it is perfect square otherwise return -1. Note: A number is a perfect square if its square root is an integer.
+#4.You are given a number N, write a program that calculates the sum of it’s digits.
+    
+#5. You are given an integer A. You have to tell whether it is a perfect number or not. An Perfect number is a positive integer that is equal to the sum of its proper positive divisors. A proper divisor of a natural number is the divisor that is strictly less than the number. Return 1 if A is a perfect number and 0 otherwise.
 A=4
 def solve(A):
     if A <= 0:
@@ -16,7 +21,7 @@ def solve(A):
 answer=solve(A)
 print(answer)
 
-#6. You will be given an integer n. You need to return the count of prime numbers less than or equal to n.
+#6. You will be given an integer n. You must return the count of prime numbers less than or equal to n.
 n=19
 def solve(n):
     is_prime = [True] * (n+1)
