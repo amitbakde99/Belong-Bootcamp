@@ -62,3 +62,8 @@ number = 3245
 result = is_colorful_number(number)
 print(result)  # Output: 1 (3245 is a COLORFUL number)
 
+#5.Given a list A of N integers. Count the number of elements that have at least 1 elements greater than itself. Problem Constraints 1 <= N <= 1051 <= A[i] <= 109 Input Format First and only argument is a list of integers A. Output Format Return the count of elements.
+#6. Given a list A and an integer B. A pair(i, j) in the list is a good pair if i != j and (A[i] + A[j] == B). Check if any good pair exist or not. Input Format First argument is an integer list A. Second argument is an integer B. Output Format Return 1 if good pair exist otherwise return 0.
+#7.Given an integer list A of size N and an integer B, you have to return the same list after rotating it B times towards the right. Input Format The first argument given is the integer list A.The second argument given is the integer B. Output Format Return the list A after rotating it B times to the right
+#8. You are given a constant list A. You are required to return another list which is the reversed form of the input array. Input Format First argument is a constant list A. Output Format Return an integer list.
+
